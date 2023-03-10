@@ -57,6 +57,11 @@ public class PracticaJava1 {
 		static void octavoMetodo(int anio) {
 			System.out.println("Es bisiesto o no: " + ((anio%4 == 0)?"Sí es":"No es"));		
 		}
+
+		// 10. Escribir un programa para sumar 2 numeros sin usar operadores aritmeticos
+		static void decimoMetodo(int numberOne, int numberTwo) {
+			System.out.println("La suma de: " + numberOne + " y "+numberTwo+ "es:" + Math.addExact(numberOne, numberTwo));
+		
 		
 		 public static void main(String[] args) {
 			 primerMetodo(3,5,4);
@@ -67,6 +72,8 @@ public class PracticaJava1 {
 			 sextoMetodo(2,2);
 			 septimoMetodo(1);
 			 octavoMetodo(2024);
+
+			 decimoMetodo(5,7);
 		 }
 		
 		
