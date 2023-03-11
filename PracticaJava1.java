@@ -131,6 +131,11 @@ public class PracticaJava1 {
 			
 					
 		}
+		// 15. Escribir un metodo para encontrar el factorial de un numero sin loops
+		static long quinceavoMetodo(int  n){
+			return (n>1)?(n* quinceavoMetodo(n-1)):1;		
+				
+		}
 		
 		 public static void main(String[] args) {
 			 primerMetodo(3,5,4);
@@ -147,6 +152,7 @@ public class PracticaJava1 {
 			 doceavoMetodo(22);
 			 treceavoMetodo("Hola Mundo");
 			 cartoceavoMetodo("Hola");
+			  System.out.println( quinceavoMetodo(6) );
 		 }
 		
 		
