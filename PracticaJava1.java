@@ -61,7 +61,56 @@ public class PracticaJava1 {
 		// 10. Escribir un programa para sumar 2 numeros sin usar operadores aritmeticos
 		static void decimoMetodo(int numberOne, int numberTwo) {
 			System.out.println("La suma de: " + numberOne + " y "+numberTwo+ "es:" + Math.addExact(numberOne, numberTwo));
+				
+		// 9. Escribir mostrar en pantalla los primeros 100 numeros primos
+		static void novenoMetodo() {
+			int num = 0;
+			int i =1;
+			while( i <=100 ) {
+				boolean respuesta ;
+				respuesta = (i>7)?((num%2 != 0)&&(num%3 != 0)&&(num%5 !=0)&&(num%7 !=0)&&(num%9 !=0)&&(num%11 !=0)&&(num%13 !=0)&&(num%15 !=0)&&(num%17 !=0)&&(num%19 !=0)&&(num%21 !=0)&&(num%23 !=0)):
+						(i >4)? ((num%2 != 0)&&(num%3 != 0)&&(num%5 !=0)&&(num%7 !=0)&&(num%9 !=0)):
+					   (num==	2)||(num%2 != 0)&&(num!=1);
+				if(respuesta) {
+					System.out.println(num +", ");
+					//System.out.println(i +"i ");
+					num = num +0;
+					i = i + 1;
+
+				}
+				num = num + 1;
+			}
+			
+			
+		}
 		
+		// 10. Escribir un programa para sumar 2 numeros sin usar operadores aritmeticos
+		static void decimoMetodo(int numberOne, int numberTwo) {
+			System.out.println("La suma de: " + numberOne + " y "+numberTwo+ "es:" + Math.addExact(numberOne, numberTwo));
+		}
+		
+		// 11. Escribir un método para verificar si un numero positivo de 2 digitos es palindromo
+		static void onceavoMetodo(int num	) {
+			if(num>0) {
+				StringBuilder number = new StringBuilder(num);
+				StringBuilder compareNumber = number.reverse();
+				
+				System.out.println("Es un numero palindromo " +number + " "+ ((number ==compareNumber)?"Sí":"No"));
+			}
+					
+		}
+		
+		// 12. Sin usar loops, escribir un metodo para sumar todos los digitos de un numero donde 99 >= n >= 10
+		static void doceavoMetodo(int n ) {
+			
+			if( 99>= n && n>=10) {
+				String str = Integer.toString(n);
+				int a = Character.getNumericValue(str.charAt(0));
+				int b = Character.getNumericValue(str.charAt(1));
+				System.out.println(a + b);
+			}
+			
+		}
 		
 		 public static void main(String[] args) {
 			 primerMetodo(3,5,4);
@@ -72,8 +121,10 @@ public class PracticaJava1 {
 			 sextoMetodo(2,2);
 			 septimoMetodo(1);
 			 octavoMetodo(2024);
-
+			 novenoMetodo();
 			 decimoMetodo(5,7);
+			 onceavoMetodo(33);
+			 doceavoMetodo(22);
 		 }
 		
 		
