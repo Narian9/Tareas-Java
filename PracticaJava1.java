@@ -111,6 +111,26 @@ public class PracticaJava1 {
 			}
 			
 		}
+
+				// 13. Escribir un método para remover espacios en blanco de un String. ej -> "Hola Mundo" -> "HolaMundo"
+		static void treceavoMetodo(String sentence) {
+
+				
+				System.out.println(sentence.replace(" ",""));
+			
+					
+		}
+		
+		
+		// 14. Escribir un método para invertir un String. ej -> "Hola" -> "aloH" --- Sin usar loops
+		static void cartoceavoMetodo(String word) {
+			
+				StringBuilder word1 = new StringBuilder(word);
+				
+			System.out.println( word1.reverse());
+			
+					
+		}
 		
 		 public static void main(String[] args) {
 			 primerMetodo(3,5,4);
@@ -125,6 +145,8 @@ public class PracticaJava1 {
 			 decimoMetodo(5,7);
 			 onceavoMetodo(33);
 			 doceavoMetodo(22);
+			 treceavoMetodo("Hola Mundo");
+			 cartoceavoMetodo("Hola");
 		 }
 		
 		
